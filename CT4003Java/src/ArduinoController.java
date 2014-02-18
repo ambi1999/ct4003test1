@@ -1,4 +1,5 @@
 //modified on 18 Feb 2014
+//modified again by ambi
 import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;
 
@@ -21,7 +22,10 @@ import javax.mail.internet.MimeMessage;
 public class ArduinoController {
     //static InputStream input;
 	static BufferedReader input;
-	 
+	
+	//temp comment by ambi
+	int test =0;
+	
     static OutputStream output;
     
     static String from = "";
