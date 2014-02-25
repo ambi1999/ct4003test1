@@ -23,7 +23,7 @@ void loop(){
                   digitalWrite(12, LOW);
                 }else if(incomingByte==3){
                   digitalWrite(8, HIGH);
-                }else{
+                }else if(incomingByte==4){
                   digitalWrite(8, LOW);
                 }
         }

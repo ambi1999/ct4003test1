@@ -1,9 +1,8 @@
-//modified on 18 Feb 2014
-//modified again by ambi
-
-//another change by ambi on 19 feb 2014
-
-//modifed by ambi on 24 feb
+/**
+ * @author      Ambikesh Jayal <ambi1999@gmail.com>
+ * @version     1.0                 (current version number of program)
+ * @since     25 Feb 2014
+ */
 import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;
 
@@ -27,7 +26,6 @@ public class ArduinoController {
     //static InputStream input;
 	static BufferedReader input;
 	
-	//temp comment by ambi
 	int test =0;
 	
     static OutputStream output;
@@ -56,20 +54,7 @@ public class ArduinoController {
                 SerialPort.PARITY_NONE);
         
         while(true){
-        /*if(input.available()>0) {
-        	//char ch=(char)(input.read());
-        	//int value=Integer.parseInt(ch+"");
-        	int value=input.read();
-            System.out.println(value);
-            if(value > 40){
-            	String subject = "ALERT VAL =" + value ;
-                String body = "Welcome to Ct4003 class" + new Date().getTime();
-                sendFromGMail(host, portformail, from, password, to, subject, body);
-            	
-            }
-            
-            
-        }*/
+      
         	try{
         	String inputLine=null;
             if (input.ready()) {
@@ -86,7 +71,7 @@ public class ArduinoController {
                 }
             }
         	}catch(Exception ex){
-        		//ex.printStackTrace();
+        		ex.printStackTrace();
         	}
         }
         
@@ -172,10 +157,10 @@ public class ArduinoController {
         System.out.println("Enter password");
         password = sc.next();
         
-        System.out.println("Enter host, For gmaail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
+        System.out.println("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
         host = sc.next();
         
-        System.out.println("Enter port for mail. 587 or 465");
+        System.out.println("Enter port for mail. 465 if from within university otherwise try 587");
         portformail = sc.next();
     	
       //readFromArduino();
@@ -193,8 +178,8 @@ public class ArduinoController {
             int command=reader.nextInt();
             System.out.println("**** Sending ["+command + "]");
     	    sendToArduino(command);
-    	}*/
-    	
+    	}
+    	*/
     	
     }
    
