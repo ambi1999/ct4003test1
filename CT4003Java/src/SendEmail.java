@@ -1,3 +1,9 @@
+/**
+ * @author      Ambikesh Jayal <ambi1999@gmail.com>
+ * @version     1.0                 (current version number of program)
+ * @since     25 Feb 2014
+ */
+
 import java.io.BufferedReader;
 import java.io.OutputStream;
 import java.util.Date;
