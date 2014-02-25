@@ -35,7 +35,7 @@ static BufferedReader input;
     
     static String from = "";
     static String password = "";
-    static String[] to = { "s1309454@connect.glos.ac.uk" }; // list of recipient email addresses
+    static String[] to = { "s1309101@connect.glos.ac.uk" }; // list of recipient email addresses
     static String host="";
     static String portformail="";
     
