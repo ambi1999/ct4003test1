@@ -34,7 +34,7 @@ public class ArduinoController {
     
     static String from = "";
     static String password = "";
-    static String[] to = { "s1309373@connect.glos.ac.uk" }; // list of recipient email addresses
+    static String[] to = { "ajayal@glos.ac.uk" }; // list of recipient email addresses
     static String host="";
     static String portformail="";
     
