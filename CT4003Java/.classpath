@@ -6,7 +6,7 @@
 	<classpathentry kind="lib" path="lib/glos.jar"/>
 	<classpathentry kind="lib" path="lib/RXTXcomm.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CT4003Javaaaaaaaaaaaaaaaaaaaaaaaa/lib/nativedll"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="${PROJECT_LOC}/lib/nativedll"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
