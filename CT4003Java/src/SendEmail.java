@@ -4,13 +4,9 @@
  * @since     25 Feb 2014
  */
 
-//The following has been edited by Andrew Spackman - 25/02/2014 - Completed at 11:19am
+//added by Andrew in class
 
-
-//dasdsa
 import glos.IO;
-
-
 
 import java.io.BufferedReader;
 import java.io.OutputStream;
@@ -35,7 +31,7 @@ static BufferedReader input;
     
     static String from = "";
     static String password = "";
-    static String[] to = { "s1309101@connect.glos.ac.uk" }; // list of recipient email addresses
+    static String[] to = { "angeljayin@gmail.com" }; // list of recipient email addresses
     static String host="";
     static String portformail="";
     
@@ -70,6 +66,7 @@ static BufferedReader input;
 	            transport.sendMessage(message, message.getAllRecipients());
 	            transport.close();
 	            System.out.println("Email sent successfully");
+	            
 	        }
 	        catch (Exception ex) {
 	            ex.printStackTrace();
@@ -80,24 +77,26 @@ static BufferedReader input;
 public static void main(String[] args) throws Exception{
     	
     	Scanner sc= new Scanner(System.in);
-        //System.out.println("Enter user name");
+        System.out.println("Enter user name");
         //from = sc.next();
-        from = IO.readString("Enter Sender Email Address");
+        from = IO.readString("Enter User Name");
+
         
-        //System.out.println("Enter password");
+        System.out.println("Enter password");
         //password = sc.next();
         password = IO.readString("Enter Password");
+
         
-        //System.out.println("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
+        System.out.println("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
         //host = sc.next();
         host = IO.readString("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
         
-        //System.out.println("Enter port for mail. 465 if from within university otherwise try 587");
+        System.out.println("Enter port for mail. 465 if from within university otherwise try 587");
         //portformail = sc.next();
         portformail = IO.readString("Enter port for mail. 465 if from within university otherwise try 587");
     
-     String subject = "CT4003 Email Test" ;
-     String body = "I'mma go first! " + new Date().getTime();
+     String subject = "TEST =" + "EMAIL " ;
+     String body = "KEEP CALM AND START PROGRAMMING" + new Date().getTime();
      sendFromGMail(host, portformail, from, password, to, subject, body);
      
 }
