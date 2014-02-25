@@ -4,6 +4,8 @@
  * @since     25 Feb 2014
  */
 
+//added by ambi in class
+
 import java.io.BufferedReader;
 import java.io.OutputStream;
 import java.util.Date;
@@ -27,7 +29,7 @@ static BufferedReader input;
     
     static String from = "";
     static String password = "";
-    static String[] to = { "ajayal@glos.ac.uk" }; // list of recipient email addresses
+    static String[] to = { "s1309373@connect.glos.ac.uk" }; // list of recipient email addresses
     static String host="";
     static String portformail="";
     
