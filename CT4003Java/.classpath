@@ -2,11 +2,12 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="N:/workspace/CT4003Java/lib/RXTXcomm.jar">
+	<classpathentry kind="lib" path="lib/libforemail/mail.jar"/>
+	<classpathentry kind="lib" path="lib/glos.jar"/>
+	<classpathentry kind="lib" path="lib/RXTXcomm.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="N:/workspace/CT4003Java/lib/nativedll"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="CT4003Javaaaaaaaaaaaaaaaaaaaaaaaa/lib/nativedll"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="N:/workspace/lib/email/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
