@@ -1,17 +1,16 @@
 /**
  * @author      Ambikesh Jayal <ambi1999@gmail.com>
- * @version     1.0                 (current version number of program)
- * @since     25 Feb 2014
+ * @version     1.1                 (current version number of program)
+ * @since   	25 Feb 2014
+ * @edited		Greig Hannis (s1300334) in class 25/02/14
  */
 
-//added by ambi in class
+import glos.IO;
 
 import java.io.BufferedReader;
 import java.io.OutputStream;
 import java.util.Date;
 import java.util.Properties;
-import java.util.Scanner;
-
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -29,7 +28,7 @@ static BufferedReader input;
     
     static String from = "";
     static String password = "";
-    static String[] to = { "s1309373@connect.glos.ac.uk" }; // list of recipient email addresses
+    static String[] to = { "ajayal@glos.ac.uk" }; // list of recipient email addresses
     static String host="";
     static String portformail="";
     
@@ -73,21 +72,18 @@ static BufferedReader input;
 	 
 public static void main(String[] args) throws Exception{
     	
-    	Scanner sc= new Scanner(System.in);
-        System.out.println("Enter user name");
-        from = sc.next();
+        from = IO.readString("Enter user name");
         
-        System.out.println("Enter password");
-        password = sc.next();
+        password = IO.readString("Enter password");
         
-        System.out.println("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
-        host = sc.next();
+        host = IO.readString("Enter host, For gmail enter smtp.gmail.com, For yahoo enter smtp.mail.yahoo.com");
         
-        System.out.println("Enter port for mail. 465 if from within university otherwise try 587");
-        portformail = sc.next();
+        portformail = IO.readString("Enter port for mail. 465 if from within university otherwise try 587");
+        
+        to[0] = IO.readString("Enter recipient e-mail address");
     
-     String subject = "ALERT VAL =" + "testing" ;
-     String body = "Welcome to Ct4003 class" + new Date().getTime();
+     String subject = "Java Email Test" ;
+     String body = "Sent from class on" + new Date().getTime();
      sendFromGMail(host, portformail, from, password, to, subject, body);
      
 }
